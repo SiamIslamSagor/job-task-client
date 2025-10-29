@@ -23,7 +23,7 @@ const ImageCard = ({ image }: { image: IImage }) => {
     // send description to server
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/analysis/score",
+        "https://back-end-job-task.vercel.app/api/analysis/score",
         {
           userText: description,
           imageId: image.id,
