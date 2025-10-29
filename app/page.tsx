@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetch("http://localhost:3000/api/analysis/images");
+      const response = await fetch("https://back-end-job-task.vercel.app/api/analysis/images");
       const data = await response.json();
       setImages(data.data);
     };
